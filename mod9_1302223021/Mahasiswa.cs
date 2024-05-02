@@ -1,13 +1,20 @@
+using Microsoft.VisualBasic;
+
 namespace mod9_1302223021
 {
-    public class WeatherForecast
+    public class Mahasiswa
     {
-        public DateOnly Date { get; set; }
+        public String Name { get; set; }
+        public String NIM { get; set; }
+        public List<String> Course { get; set; }
+        public int Year { get; set; }
 
-        public int TemperatureC { get; set; }
-
-        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-
-        public string? Summary { get; set; }
+        public Mahasiswa(string name, string NIM, List<string> course, int year)
+        {
+            this.Name = name;
+            this.NIM = NIM;
+            this.Course = course;
+            this.Year = year;
+        }
     }
 }
